@@ -1,5 +1,16 @@
-'use client';
 import React from 'react';
+
+export const generateMetadata =async ({ params, searchParams }) => { 
+    
+    const res = await fetch("https://...")
+    const title = res.data.title
+
+  return {
+
+     title,
+
+}
+}
 
 const Page = ({ params, searchParams }) => {
     return (
